@@ -37,58 +37,74 @@ This project simulates a GPS toll-based system using Python. The simulation cove
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/yourusername/gps-toll-based-system.git
-cd gps-toll-based-system
+    ```bash
+    https://github.com/satyam6290/GPS_BASED-TOLL-SYSTEM-USING-PYTHON.git
+    cd gps-toll-based-system
+    ```
 
-## Create and activate a virtual environment
+2. Create and activate a virtual environment:
 
-python -m venv venv
-Windows use `venv\Scripts\activate`
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
 
-Install the required packages:
+3. Install the required packages:
 
-pip install -r requirements.txt
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Open the project in PyCharm.
+## Usage
 
-Run the simulation script:
+1. Open the project in PyCharm.
 
-python toll_simulation.py
+2. Run the simulation script:
 
-This will start the simulation, showing the movements of vehicles, toll calculations, and deductions from user accounts.
+    ```bash
+    python toll_simulation.py
+    ```
 
-### View the generated reports and map visualization:
-A CSV report will be generated (toll_report.csv) detailing vehicle movements, total distances traveled, tolls paid, and payment vendors used.
-A map visualization (vehicle_movements_area.html) will be saved, showing vehicle movements and toll zones.
+    This will start the simulation, showing the movements of vehicles, toll calculations, and deductions from user accounts.
 
+3. View the generated reports and map visualization:
+    * A CSV report will be generated (`toll_report.csv`) detailing vehicle movements, total distances traveled, tolls paid, and payment vendors used.
+    * A map visualization (`vehicle_movements_area.html`) will be saved, showing vehicle movements and toll zones.
 
+## Example Simulation Workflow
 
-Example Simulation Workflow
-Setup Environment:
-Define road network and toll zones using geospatial coordinates.
-Initialize vehicles with starting locations and destinations.
-Simulate Vehicle Movement:
-Use SimPy to simulate vehicle movement along the network, updating GPS coordinates over time.
-Detect Toll Zone Crossings:
-Check if a vehicle's path intersects with a toll zone using Shapely and GeoPandas.
-Calculate Toll Charges:
-Calculate tolls based on the type of crossing (distance within zone or fixed fee for zone crossing) using predefined rates.
-Simulate Payments:
-Deduct toll charges from the simulated user account balances.
-Analytics and Reporting:
-Generate reports on vehicle movements, toll collections, and system performance.
-Future Enhancements
-Integration with real-time traffic data for more accurate congestion-based pricing.
-Implementation of a web-based dashboard for real-time monitoring and reporting.
-Support for more complex road networks and multiple toll zones.
-License
+1. **Setup Environment**:
+    * Define road network and toll zones using geospatial coordinates.
+    * Initialize vehicles with starting locations and destinations.
+2. **Simulate Vehicle Movement**:
+    * Use SimPy to simulate vehicle movement along the network, updating GPS coordinates over time.
+3. **Detect Toll Zone Crossings**:
+    * Check if a vehicle's path intersects with a toll zone using Shapely and GeoPandas.
+4. **Calculate Toll Charges**:
+    * Calculate tolls based on the type of crossing (distance within zone or fixed fee for zone crossing) using predefined rates.
+5. **Simulate Payments**:
+    * Deduct toll charges from the simulated user account balances.
+6. **Analytics and Reporting**:
+    * Generate reports on vehicle movements, toll collections, and system performance.
+
+## Future Enhancements
+
+* Integration with real-time traffic data for more accurate congestion-based pricing.
+* Implementation of a web-based dashboard for real-time monitoring and reporting.
+* Support for more complex road networks and multiple toll zones.
+
+## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Acknowledgements
-Inspired by real-world toll systems and geospatial simulation techniques.
-Developed as a demonstration of combining simulation, geospatial analysis, and dynamic pricing in Python.
-Contact
-For any queries or issues, please contact your-email@example.com.
+## Acknowledgements
 
+* Inspired by real-world toll systems and geospatial simulation techniques.
+* Developed as a demonstration of combining simulation, geospatial analysis, and dynamic pricing in Python.
 
+## Contact
+
+For any queries or issues, please contact 
+GMAIL: sirsatyamchaudhary@gmail.com
+
+---
